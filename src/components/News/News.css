@@ -1,0 +1,100 @@
+.containerFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardBody {
+    min-height: 50px;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.cardAnchor {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(57, 95, 167) !important;
+}
+
+.cardAnchor:hover {
+    color: tomato !important;
+}
+
+.cardImage {
+    min-height: 215px;
+    max-height: 215px;
+    max-width: auto;
+}
+
+.myCardContent {
+    display: flex;
+    font-family: Georgia, serif;
+    min-height: 210px;
+}
+
+.cardContentTitle {
+    display: flex;
+    font-size: 1.2em;
+}
+
+.cardContainer {
+    background-color: hsl(0, 0%, 95%);
+    margin-bottom: 10px;
+}
+
+.cardContainer:hover {
+    box-shadow: 3px 3px 8px hsl(14, 71%, 48%);
+}
+
+/*Two screens: full width*/
+@media screen and (max-width: 3840px) {
+    .cardContainer {
+        flex: '0 1 calc(12.5% - 1em)';
+    }
+}
+
+/*Two screens: 1.5 width*/
+@media screen and (max-width: 2880px) {
+    .cardContainer {
+        flex: '0 1 calc(16% - 1em)';
+    }
+}
+
+/*One screen: full width*/
+@media screen and (max-width: 1920px) {
+    .cardContainer {
+        flex: '0 1 calc(25% - 2em)';
+    }
+}
+
+/*Smaller PC screens*/
+@media screen and (max-width: 1200px) {
+    .cardContainer {
+        flex: '0 1 calc(33% - 1em)';
+    }
+
+    .myCardContent {
+        min-height: 225px;
+    }
+}
+
+/*iPads*/
+@media screen and (max-width: 768px) {
+    .cardContainer {
+        flex: '0 1 calc(50% - 1em)';
+    }
+
+    .myCardContent {
+        min-height: 225px;
+    }
+}
+
+/*Phones*/
+@media screen and (max-width: 480px) {
+    .cardContainer {
+        flex: '0 1 calc(100% - 1em)';
+    }
+
+    .myCardContent {
+        min-height: 115px;
+    }
+}

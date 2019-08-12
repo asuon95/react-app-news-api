@@ -3,15 +3,6 @@ import './App.css';
 import News from './News/News';
 import Sidenews from './News/Sidenews';
 
-const myStyle = {
-    backgroundColor: 'ghostwhite',
-}
-
-const myHeaderStyle = {
-  padding: '10px',
-  textAlign: 'center',
-}
-
 class App extends Component {
   
   constructor(props) {
@@ -48,13 +39,13 @@ class App extends Component {
         </div>
         <div className="row">
           <div className="col s12">
-            <h3 style={myHeaderStyle}>Top Headlines: Technology in US</h3>
+            <h4 className="headline">Top Headlines: Technology in US</h4>
             <div className="divider"></div>
             <News topic={this.state.news1} />
-            <h3 style={myHeaderStyle}>Top Headlines: Science in US</h3>
+            <h4 className="headline">Top Headlines: Science in US</h4>
             <div className="divider"></div>
             <News topic={this.state.news2} />
-            <h3 style={myHeaderStyle}>Top Headlines: Entertainment in US</h3>
+            <h4 className="headline">Top Headlines: Entertainment in US</h4>
             <div className="divider"></div>
             <News topic={this.state.news3} />
           </div>

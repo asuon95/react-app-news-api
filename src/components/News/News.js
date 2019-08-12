@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import NewSingle from './NewSingle';
-
-const myStyle = {
-    display: 'flex',
-    flexWrap: 'wrap',
-    flex: '1 0 12em',
-  }
+import './News.css';
 
 class News extends Component {
     //setState news to empty array
@@ -37,7 +32,7 @@ class News extends Component {
     //component render()
     render() {
         return(
-            <div className="row" style={myStyle}>
+            <div className="row containerFlex">
                 {this.renderItems()}
             </div>
         )
