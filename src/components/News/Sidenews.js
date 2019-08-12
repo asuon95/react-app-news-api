@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SingleSide from './SingleSide';
-import axios from 'axios';
 
 class Sidenews extends Component {
     //setState news to empty array
