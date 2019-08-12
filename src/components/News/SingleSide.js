@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SingleSide = ({newsItem}) => (
-    <div>
+    <div> 
         <div className="divider"></div>
         <a href={newsItem.url} target="_blank">
             <div className="section">

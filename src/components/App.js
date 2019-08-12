@@ -8,9 +8,8 @@ const myStyle = {
 }
 
 const myHeaderStyle = {
-  padding: '20px',
-  backgroundColor: 'cornflowerblue',
-  borderRadius: '20px'
+  padding: '10px',
+  textAlign: 'center',
 }
 
 class App extends Component {
@@ -48,7 +47,7 @@ class App extends Component {
           </nav>
         </div>
         <div className="row">
-          <div className="col s8">
+          <div className="col s12">
             <h3 style={myHeaderStyle}>Top Headlines: Technology in US</h3>
             <div className="divider"></div>
             <News topic={this.state.news1} />
@@ -59,10 +58,10 @@ class App extends Component {
             <div className="divider"></div>
             <News topic={this.state.news3} />
           </div>
-          <div className="col s4" style={myStyle}>
+          {/* <div className="col s4" style={myStyle}>
             <h3 style={myHeaderStyle}>Side News</h3>
             <Sidenews topic={this.state.news4} />
-        </div>
+          </div> */}
         </div>
       </div>
     );
