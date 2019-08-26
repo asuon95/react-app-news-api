@@ -42,7 +42,33 @@
 }
 
 .cardContainer:hover {
-    box-shadow: 3px 3px 8px hsl(14, 71%, 48%);
+    box-shadow: 3px 3px 8px #00b3b3;
+}
+
+.title {
+    text-align: center;
+    background-color: #E7E8E8;
+    padding: 1em 0 1em 0;
+    margin: 1em 0 1em 0;
+}
+
+.refresh:hover {
+    color:#00b3b3 !important;
+    text-decoration: none;
+}
+
+.filterStyle {
+    background-color: #FDEBE5;
+}
+
+.contentStyle {
+    background-color: #C3C7C6;
+}
+
+.rowSize {
+    width: 95%;
+    margin: auto;
+    background-color: #C3C7C6 !important;
 }
 
 /*Two screens: full width*/

@@ -20,6 +20,12 @@ class News extends Component {
             .catch(err => console.log(err));           
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        if ( prevProps.topic !== this.props.topic ) {
+            console.log('Hello');
+        }
+    }
+
     //iterates through the data
     renderItems() {
         return (
@@ -32,8 +38,11 @@ class News extends Component {
     //component render()
     render() {
         return(
-            <div className="row containerFlex">
-                {this.renderItems()}
+            <div> 
+                <h2 className="title">{this.state.topic.title}</h2>
+                <div className="row containerFlex">
+                    {this.renderItems()}
+                </div>
             </div>
         )
     }

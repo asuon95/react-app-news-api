@@ -10,7 +10,7 @@ const NewSingle = ({newsItem}) => (
             <p className="cardContentTitle">{newsItem.title}</p>
           </div>
           <div className="card-action">
-            <a className= "cardAnchor" href={newsItem.url} target="_blank" alt={newsItem.title}>Full Article</a>
+            <a className= "cardAnchor" href={newsItem.url} target="_blank" rel="noopener noreferrer" alt={newsItem.title}>Full Article</a>
           </div>
         </div>
       </div>
